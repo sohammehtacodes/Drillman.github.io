@@ -1,0 +1,16 @@
+
+:root{
+  --brand-bg:#0b1220;        /* Deep navy */
+  --brand-primary:#f59e0b;   /* Amber */
+  --brand-primary-600:#d97706;
+  --brand-fg:#e2e8f0;        /* Slate-100 */
+  --brand-muted:#94a3b8;     /* Slate-400 */
+}
+.header{background:var(--brand-bg)}
+.btn{background:var(--brand-primary);color:#0b1220}
+.btn:hover{filter:brightness(1.05)}
+nav a.active, nav a:hover{background:#111827}
+.badge{border-color:#1f2937}
+a{color:var(--brand-primary)}
+.footer{background:var(--brand-bg);color:var(--brand-muted)}
+.logo-mark{fill:var(--brand-primary)}

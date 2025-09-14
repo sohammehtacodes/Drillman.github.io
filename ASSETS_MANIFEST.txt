@@ -1,0 +1,19 @@
+
+Replace these placeholders with REAL photos (keep filenames):
+assets/img/hero_mine.svg            -> Wide mining site hero image (1600x900 recommended)
+assets/img/site_chile.svg          -> Chile mining site photo
+assets/img/team_shopfloor.svg      -> Factory/shop-floor team photo
+assets/img/equip_dth_1.svg         -> DTH hammer close-up/action
+assets/img/equip_crawler_1.svg     -> Crawler drill in field
+assets/img/equip_jackhammer_1.svg  -> Jackhammer operator in action
+
+Client logos (SVG/PNG acceptable; keep names):
+assets/img/logos/coal_india.svg
+assets/img/logos/tata_steel.svg
+assets/img/logos/jsw_steel.svg
+assets/img/logos/codelco.svg
+assets/img/logos/angloamerican.svg
+
+Branding:
+assets/img/logo.svg                -> Replace with your official logo (SVG/PNG). Keep size ~160x40.
+assets/css/brand.css               -> Update colors to match brand palette if needed.
