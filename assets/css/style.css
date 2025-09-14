@@ -61,3 +61,90 @@ a:hover{opacity:.9}
   .kpis{grid-template-columns:repeat(2,1fr)}
   .navlinks{display:none}
 }
+
+/* --- Products index cards --- */
+.p-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+  margin-top:16px;
+}
+a.p-card{
+  display:block;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  color:var(--text);
+  text-decoration:none;
+  border-bottom:0; /* override global <a> style */
+}
+.p-card .img-wrap{
+  width:100%;
+  aspect-ratio:1/1;            /* all your images are square */
+  overflow:hidden;
+  border-top-left-radius:var(--radius);
+  border-top-right-radius:var(--radius);
+  background:#0e1628;
+}
+.p-card img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;            /* fills nicely, no weird squashing */
+}
+.p-card .body{ padding:14px 14px 16px; }
+.p-card h3{ margin:0 0 8px; font-size:18px; }
+.p-card .spec{ font-size:14px; line-height:1.35; color:#cbd5e1; }
+
+a.p-card:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:2px;
+}
+
+
+/* Case studies index spacing */
+.section h2{ margin-top:30px; }
+.section h2:first-of-type{ margin-top:10px; }
+.section h2 + ul{ margin-top:8px; }
+/* Thin centered underline for case study section headings */
+.cs-underline{
+  position: relative;
+  padding-bottom: 10px;       /* space for the line */
+}
+.cs-underline::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: clamp(260px, 100%, 1100px);  /* spans the center portion of the content area */
+  height: 0.3px;                    /* super thin underline as requested */
+  background: var(--muted);         /* subtle line that matches theme */
+  opacity: 0.5;
+}
+
+/* --- Our Clients strip --- */
+.clients{ --logo-size: 130px; }              /* change this later to resize everything */
+.clients-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: calc(var(--logo-size) * 0.40);        /* spacing tied to logo size */
+  flex-wrap: nowrap;                        /* keep one line */
+  overflow-x: auto;                         /* scroll on very small screens, still one line */
+  padding: 6px 2px;
+}
+.clients-row img{
+  width: var(--logo-size);
+  height: var(--logo-size);
+  object-fit: contain;                      /* keeps logos clean inside the square box */
+  border-radius: 0;                         /* exact squares as requested */
+}
+
+
+/* Products title + language toggle */
+.title-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.lang-toggle{font-size:.9rem;color:var(--muted)}
+.lang-toggle a{color:var(--muted);border-bottom:0}
+.lang-toggle a:hover{color:var(--text)}
