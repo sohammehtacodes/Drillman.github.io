@@ -1,0 +1,16 @@
+/* kept exactly as in prior guidance: include via <link> before </body> */
+#swastic-chatbot{position:fixed;bottom:20px;right:20px;z-index:9999;font-family:system-ui,Segoe UI,Inter,Arial,sans-serif}
+.scb-btn{width:56px;height:56px;border-radius:50%;background:#f59e0b;color:#0b1220;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.25);cursor:pointer;border:0;font-weight:700}
+.scb-panel{position:fixed;bottom:90px;right:20px;width:340px;max-height:70vh;background:#0b1220;color:#e2e8f0;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,.35);display:none;flex-direction:column;overflow:hidden;border:1px solid #1f2937}
+.scb-header{display:flex;align-items:center;gap:.6rem;padding:.8rem 1rem;border-bottom:1px solid #1f2937;background:#0b1220}
+.scb-body{padding:10px;overflow:auto;background:#0f172a}
+.scb-msg{display:flex;margin:6px 0}
+.scb-msg .b{background:#111827;color:#e2e8f0;border:1px solid #1f2937}
+.scb-msg .a{background:#f59e0b;color:#0b1220;border:1px solid #d97706}
+.scb-bubble{padding:10px 12px;border-radius:12px;max-width:90%}
+.scb-msg.user{justify-content:flex-end}
+.scb-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.scb-chip{background:#1f2937;color:#e2e8f0;border:1px solid #334155;border-radius:999px;padding:6px 10px;font-size:.85rem;cursor:pointer}
+.scb-footer{display:flex;gap:6px;padding:8px;border-top:1px solid #1f2937;background:#0b1220}
+.scb-input{flex:1;border:1px solid #334155;background:#0f172a;color:#e2e8f0;border-radius:10px;padding:8px}
+.scb-send{background:#f59e0b;color:#0b1220;border:0;border-radius:10px;padding:8px 10px;font-weight:700;cursor:pointer}
